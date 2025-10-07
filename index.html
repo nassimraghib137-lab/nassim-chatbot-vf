@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Assurance CPA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 style="text-align:center; font-family:sans-serif;">
+      Bienvenue sur le site CPA 👋
+    </h1>
+    <p style="text-align:center;">
+      Cliquez sur le chatbot en bas à droite pour discuter.
+    </p>
+
+    <script type="module">
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+      createChat({
+        webhookUrl:
+          "https://raghib27.app.n8n.cloud/webhook/17edea85-07d2-4876-9345-b7215b573cf9/chat",
+      });
+    </script>
+  </body>
+</html>
+
